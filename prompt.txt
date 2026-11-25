@@ -1,0 +1,3 @@
+nah semuanya kerjain pake skill yg ada, ingat jangan terburu2 pastiin sesuai dengan kriteria setiap bounty dan pastikan kita menang!!! oke?
+
+Bounty: u-suzy-one-line-one-laugh-roast-your-fridge-f1063521 — "One Line, One Laugh: Roast Your Fridge" (https://make.fun/bounty/u-suzy-one-line-one-laugh-roast-your-fridge-f1063521). One line, at most 200 characters, roasting a fridge, funny to someone who has never met the appliance. Built with the brainstorming skill (7 candidates, sharpest picked) and the make_fun_submission_preflight skill (stdlib-only entrypoint, verified locally).
