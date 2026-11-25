@@ -23,10 +23,14 @@ def main() -> None:
     text = ROAST.strip()
     assert 1 <= len(text) <= 200, f"roast is {len(text)} chars, must be 1-200"
     assert text, "roast must not be blank"
-    os.makedirs("/output", exist_ok=True)
-    with open("/output/entry.txt", "w", encoding="utf-8") as f:
+    # The grader runs this in a sandbox that provides /output; allow an
+    # override so the same file can be exercised in a local test dir.
+    out_dir = os.environ.get("OUTPUT_DIR", "/output")
+    os.makedirs(out_dir, exist_ok=True)
+    out_path = os.path.join(out_dir, "entry.txt")
+    with open(out_path, "w", encoding="utf-8") as f:
         f.write(text)
-    print(f"wrote /output/entry.txt ({len(text)} chars)")
+    print(f"wrote {out_path} ({len(text)} chars)")
 
 
 if __name__ == "__main__":
